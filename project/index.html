@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Filipe Costa Web Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row is-flex">
+        <div class="col-md-2 col-xs-2 col-sm-2">
+          <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+          </svg>
+        </div>
+
+        <!-- Nav bar including some information about the author -->
+        <div class="col-md-10 col-xs-10 col-sm-10">
+          <h1 class="main-title text-uppercase text-right">Filipe Costa</h1>
+          <h4 class="main-subtitle text-uppercase text-right text-bold">
+            <strong>Mobile and Full Stack Developer</strong>
+          </h4>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="main-info" class="row">
+        <div class="col-md-12 main-info-area">
+          <!--
+            Banner picture presenting author's photo.
+
+            Code include responsive images treatment for viewport widths above 800 pixels,
+            500 pixels and a default fallback where an medium image will be rendered
+          -->
+          <picture>
+            <source media="(min-width: 800px)" srcset="images/main_banner-1600_large_2x.jpg" />
+            <source media="(min-width: 500px)" srcset="images/main_banner-800_large_1x.jpg" />
+            <img class="main-image img-responsive" src="images/main_banner-500medium.jpg" alt="Author image with character Buzz Light Year from Toy Story" />
+          </picture>
+
+          <!-- Text on the image with author's information as facebook, linkedin and github -->
+          <div class="main-text">
+            <p>Hey there!</p>
+            <p>I'm a mobile and full stack developer based in Brazil.</p>
+            <p>You can find more about me on:</p>
+            <div class="social-network">
+              <a href="https://github.com/filipecosta01/" class="fa fa-facebook-official social-icon"></a>
+              <a href="https://github.com/filipecosta01/" class="fa fa-github social-icon"></a>
+              <a href="https://twitter.com/filipedscosta" class="fa fa-twitter social-icon"></a>
+              <a href="https://www.linkedin.com/in/filipecosta01/" class="fa fa-linkedin social-icon"></a>
+              <a href="mailto(s.costa.filipe@gmail.com)" class="fa fa-gmail social-icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="work-info-title">
+            Work Information
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--
+          Each article represents a company author's already worked for.
+
+         Company name in green indicates author is still working for that company, red otherwise.
+        -->
+        <article class="col-md-4 col-sm-6 col-xs-12 text-center work-info">
+          <picture>
+            <source media="(min-width: 1500px)" srcset="images/first_job-800_large_1x.jpg" />
+            <source media="(min-width: 769px)" srcset="images/first_job-500medium.jpg" />
+            <img class="work-image-banner center-block" src="images/first_job-300small.jpg" alt="Javascript coding from an unkown IDE" />
+          </picture>
+          <footer>
+            <a href="#">
+              <h4 class="company-title still-working">
+                Clevertech
+              </h4>
+            </a>
+            <h5 class="job-role">
+              Software Developer
+            </h5>
+          </footer>
+        </article>
+
+        <article class="col-md-4 col-sm-6 col-xs-12 text-center work-info">
+          <picture>
+            <source media="(min-width: 1500px)" srcset="images/second_job-800_large_1x.jpg" />
+            <source media="(min-width: 769px)" srcset="images/second_job-500medium.jpg" />
+            <img class="work-image-banner center-block" src="images/second_job-300small.jpg" alt="Min version of Javascript coding from an unkown IDE" />
+          </picture>
+          <footer>
+            <a href="#">
+              <h4 class="company-title left-working">L'Edutech</h4>
+            </a>
+            <h5 class="job-role">
+              Former Sofware Developer
+            </h5>
+          </footer>
+        </article>
+
+        <article class="col-md-4 col-sm-6 col-xs-12 text-center work-info">
+          <picture>
+            <source media="(min-width: 1500px)" srcset="images/third_job-800_large_1x.jpg" />
+            <source media="(min-width: 769px)" srcset="images/third_job-500medium.jpg" />
+            <img class="work-image-banner center-block" src="images/third_job-300small.jpg" alt="Lots of programming languages names forming a moisaic" />
+          </picture>
+          <footer>
+            <a href="#">
+              <h4 class="company-title left-working">Embedded Lab</h4>
+            </a>
+            <h5 class="job-role">
+              Former Software Developer
+            </h5>
+          </footer>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
